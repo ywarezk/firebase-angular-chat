@@ -1,0 +1,21 @@
+<!--
+	template for the first chat window
+	
+	Created December 30th, 2014
+	@author: Yariv Katz
+	@version: 1.0
+	@copyright: Nerdeez LTD 
+-->
+
+
+<form ng-submit="gotoActiveChat()" >
+	<label>
+		From:
+	</label>
+	<input type="email" ng-model="fromMail" />
+	<label>
+		To:
+	</label>
+	<input type="email" ng-model="toMail" />
+	<input type="submit" value="Submit" />
+</form>

@@ -1,0 +1,31 @@
+<!--
+	template for the main chat window
+	
+	Created December 30th, 2014
+	@author: Yariv Katz
+	@version: 1.0
+	@copyright: Nerdeez LTD
+-->
+
+<div class="chat-active">
+	
+	<div class="chat-messages">
+		<ul>
+			<li ng-repeat="chat in chatMessages" >
+				<strong>From:</strong> {{chat.from}} <br/>
+				{{chat.message}}
+			</li>
+		</ul>
+	</div>
+	
+	<div class="send-message">
+		<form ng-submit="sendMessage();">
+			<label>
+				Message:
+			</label>
+			<input type="text" ng-model="message" />
+			<input type="submit" value="Send" />
+		</form>
+	</div>
+	
+</div>
